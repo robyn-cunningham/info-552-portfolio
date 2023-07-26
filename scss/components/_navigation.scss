@@ -1,3 +1,20 @@
 /* =============
     Navigation
 ============= */
+
+// blue / gray link
+    blueLink:link, blueLink:visited{
+        color: var(--blue);
+        text-decoration: none;
+    }
+
+    blueLink:hover, blueLink:active{
+        color: var(--gray);
+    }
+
+
+
+
+nav{
+    background-color: var(--green);
+}

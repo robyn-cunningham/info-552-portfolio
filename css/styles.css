@@ -14,10 +14,10 @@ html {
   --black: #000000;
   --white: #ffffff;
   --green: #7eb774;
-  --blue: #2589bd;
+  --blue: #0a7a99;
   --purple: #a594b3;
   --gray: #36413e;
-  --lightgreen: #d1f0f0;
+  --lightGreen: #d1f0f0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -336,6 +336,24 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: var(--green);
+}
+
+.content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 24px auto 24px;
+  grid-template-columns: 24px auto 24px;
+      grid-template-areas: ". content .";
+}
+.content-grid .content-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  background-color: var(--lightGreen);
+  grid-area: content;
+}
+
 /* =============
     Typography
 ============= */
@@ -365,9 +383,59 @@ textarea {
 /* =============
     Navigation
 ============= */
+blueLink:link, blueLink:visited {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+blueLink:hover, blueLink:active {
+  color: var(--gray);
+}
+
+nav {
+  background-color: var(--green);
+}
+
 /* =============
     Header
 ============= */
 /* =============
     Footer
+============= */
+footer {
+  background-color: var(--green);
+}
+footer #footer-bottom {
+  background-color: var(--blue);
+}
+
+/* =============
+    Index
+============= */
+#index a:link, #index a:visited {
+  color: var(--blue);
+  text-decoration: none;
+}
+#index a:hover, #index a:active {
+  color: var(--gray);
+}
+
+/* =============
+    About Me
+============= */
+/* =============
+    Associations
+============= */
+#associations-right img {
+  width: 100%;
+}
+
+/* =============
+    Contact
+============= */
+/* =============
+    Projects
+============= */
+/* =============
+    Resume
 ============= */

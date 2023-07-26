@@ -1,0 +1,15 @@
+/* =============
+    Index
+============= */
+
+#index{
+    
+    a:link, a:visited{
+        color: var(--blue);
+        text-decoration: none;
+    }
+
+    a:hover, a:active{
+        color: var(--gray);
+    }
+}
